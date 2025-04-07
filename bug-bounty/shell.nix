@@ -11,6 +11,7 @@ pkgs.mkShell {
     #pkgs.inql # graphql injection tool
     #pkgs.sqlmap # SQL injection tool
     pkgs.dalfox # XSS scanner
+    pkgs.nikto # web server scanner
     pkgs.nuclei # vulnerability scanner
   ];
 
