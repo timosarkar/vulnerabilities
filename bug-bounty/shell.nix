@@ -19,6 +19,6 @@ pkgs.mkShell {
   # find xss: subfinder -d <domain> | httpx | katana | dalfox pipe
   # find vuln: subfinder -d <domain> | httpx | katana | nuclei -t <template>
   #
-  # waf bypass: nuclei -u <domain> -t nuclei-templates/ -H "User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:125.0) Gecko/20100101 Firefox/125.0" -H "Referer: 127.0.0.1" -H "X-Forwarded-For: 127.0.0.1"
+  # waf bypass: ubfinder -d <domain> | httpx | nuclei -t nuclei-templates/ -H "User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:125.0) Gecko/20100101 Firefox/125.0" -H "Referer: 127.0.0.1" -H "X-Forwarded-For: 127.0.0.1" -c 100
   '';
 }
